@@ -6,12 +6,42 @@
     <title>David Goggins' Phone Cover</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <style>
+        video {
+            width: 700px;
+            height: 700px;
+        }
+
+        .phone-img-2 {
+            display: block;
+        }
+
+        .phone-img-3 {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            video {
+                width: 300px;
+                height: 300px;
+            }
+
+            .phone-img-2 {
+                display: none;
+            }
+
+            .phone-img-3 {
+                display: block;
+            }
+        }
+
+    </style>
 </head>
 <body>
 <!--key=Zl-502-hI-->
 <div class="container pb-5">
     <section id="hero">
-        <div class="px-4 py-5 my-5 text-center">
+        <div class="px-4 py-1 my-5 text-center">
             <h1 class="display-5 fw-bold">David Goggins Quote</h1>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Have one of the best quotes of <strong>David Goggins</strong> at your fingerprint.</p>
@@ -25,37 +55,36 @@
         <div class="container">
             <div class="row featurette pb-5">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1">Available for 23 different phone models</h2>
+                    <h2 class="featurette-heading fw-normal lh-1">Available for 11 different phone models</h2>
                     <p class="lead">No matter what phone you have, we have a cover that fits it!</p>
                     <ul style="text-decoration: dotted">
                         <li>Iphone 14 (Pro Max, Pro, Plus)</li>
                         <li>Iphone 13 (Pro Max, Pro, Mini)</li>
                         <li>Iphone 12 (Pro Max, Pro, Mini)</li>
                         <li>Iphone 11 (Pro Max, Pro)</li>
-                        <li>Google Pixel 6 (Pro)</li>
-                        <li>Samsung Galaxy S22 (Plus, Ultra)</li>
-                        <li>Samsung Galaxy S21 (Plus, Ultra, FE)</li>
                     </ul>
-                    <p class="lead"><span style="font-weight: bold; color: red">DISCLAIMER:</span> Iphone ProMax Models and Plus Models are the same size. Same for Pro Models and Normal Models</p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="450" height="450" src="92727.jpeg" alt="Placeholder: 500x500">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto phone-img-2" width="450" height="450" src="92727.jpeg" alt="Placeholder: 500x500">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto phone-img-3" width="450" height="450" src="img.png" alt="Placeholder: 500x500">
                 </div>
             </div>
             <hr class="featurette-divider">
             <div class="row featurette pt-5">
-                <div class="col-lg-8 mx-auto d-flex justify-content-center">
-                    <video controls>
-                        <source src="Download.mp4" type="video/mp4">
-                    </video>
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center">
+                        <video controls>
+                            <source src="Download.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="downloadbtn mt-5">
         <div class="d-flex flex-sm-row justify-content-center">
-            <a class="btn btn-primary rounded-pill px-3" href="https://buy.stripe.com/cN201A4Xu5n30mY3ce">Order</a>
-            <a class="btn btn-outline-secondary rounded-pill px-3 mt-3 mt-sm-0 ms-sm-2" onclick="location.href='mailto:motivationalcover@gmail.com';">Contact Us</a>
+            <button class="btn btn-primary rounded-pill mx-1" type="button"><a class="text-decoration-none" style="color: white" href="https://buy.stripe.com/cN201A4Xu5n30mY3ce">Order</a></button>
+            <button class="btn btn-secondary rounded-pill mx-1" type="button"><a onclick="location.href='mailto:motivationalcover@gmail.com';">Contact Us</a></button>
         </div>
     </section>
 </div>
